@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lettre de motivation — Data Governance Officer (Sibelga)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lettre de motivation — Arthur Mbomo, candidature Data Governance Officer, Sibelga" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent-red: #e01f1f;
+      --accent-red-dark: #8b1111;
+
+      /* Light */
+      --bg-body-light: #f3f4f6;
+      --bg-card-light: #ffffff;
+      --text-main-light: #111827;
+      --text-muted-light: #6b7280;
+      --border-light: #e5e7eb;
+
+      /* Dark */
+      --bg-body-dark: #050506;
+      --bg-card-dark: #151518;
+      --text-main-dark: #f9fafb;
+      --text-muted-dark: #9ca3af;
+      --border-dark: #27272f;
+    }
+
+    html {
+      font-size: 13px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      background:
+        radial-gradient(circle at top, #0b1020 0%, #050506 45%, #111827 100%);
+      color: var(--text-main-light);
+    }
+
+    body.dark {
+      background:
+        radial-gradient(circle at top, #101320 0%, #050506 50%, #020308 100%);
+      color: var(--text-main-dark);
+    }
+
+    .page-wrapper {
+      max-width: 960px;
+      margin: 24px auto;
+      padding: 0 12px 24px;
+      box-sizing: border-box;
+    }
+
+    /* ===== BANNIÈRE ===== */
+    .banner {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.3fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 18px 20px;
+      border-radius: 14px 14px 0 0;
+      color: #ffffff;
+      box-shadow: 0 14px 26px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+      background: #111827;
+    }
+
+    /* Image de bannière depuis GitHub */
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: -40px;
+      background:
+        linear-gradient(120deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.6) 100%),
+        url("https://raw.githubusercontent.com/mantorx/cv/refs/heads/main/sibelga.jpg")
+          center/cover no-repeat;
+      opacity: 0.95;
+      pointer-events: none;
+    }
+
+    .banner-left,
+    .banner-right {
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+      display: block;
+      border: 2px solid rgba(255,255,255,0.85);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    .banner-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .banner-title h1 {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .banner-title span {
+      margin-top: 4px;
+      font-size: 0.92rem;
+      color: #e5e7eb;
+    }
+
+    .banner-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .position-label {
+      font-family: "Playfair Display", serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-align: right;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .toolbar button {
+      font-size: 0.85rem;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(249,250,251,0.3);
+      background: rgba(15,23,42,0.6);
+      color: #f9fafb;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      backdrop-filter: blur(4px);
+    }
+
+    .toolbar button:hover {
+      filter: brightness(1.05);
+    }
+
+    .toolbar button.secondary {
+      border-style: dashed;
+    }
+
+    .toolbar button.active {
+      background: #ffffff;
+      color: #111827;
+      border-color: #ffffff;
+    }
+
+    .card {
+      background: var(--bg-card-light);
+      border-radius: 0 0 14px 14px;
+      box-shadow: 0 16px 35px rgba(15, 23, 42, 0.25);
+      border: 1px solid var(--border-light);
+      border-top: none;
+      overflow: hidden;
+    }
+
+    body.dark .card {
+      background: var(--bg-card-dark);
+      border-color: var(--border-dark);
+    }
+
+    .letter-banner {
+      padding: 6px 18px;
+      background: linear-gradient(90deg, #111827 0%, #8b1111 40%, #e01f1f 100%);
+      color: #f9fafb;
+      font-family: "Playfair Display", serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    body.dark .letter-banner {
+      background: linear-gradient(90deg, #050509 0%, #8b1111 40%, #ff3434 100%);
+    }
+
+    .letter-body-wrapper {
+      padding: 16px 20px 18px;
+      box-sizing: border-box;
+    }
+
+    .letter-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--text-muted-light);
+      margin-bottom: 12px;
+    }
+
+    body.dark .letter-header {
+      color: var(--text-muted-dark);
+    }
+
+    .letter-header div {
+      max-width: 48%;
+    }
+
+    @media (max-width: 700px) {
+      .banner {
+        grid-template-columns: 1fr;
+      }
+      .banner-right {
+        align-items: flex-start;
+        margin-top: 8px;
+      }
+      .position-label {
+        text-align: left;
+      }
+      .letter-header {
+        flex-direction: column;
+      }
+      .letter-header div {
+        max-width: 100%;
+        margin-bottom: 6px;
+      }
+    }
+
+    .subject-line {
+      font-weight: 600;
+      margin: 6px 0 12px;
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+
+    ul {
+      margin: 4px 0 8px 20px;
+      padding-left: 0;
+      font-size: 0.93rem;
+      text-align: justify;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+
+    .closing {
+      margin-top: 14px;
+    }
+
+    .signature-block {
+      margin-top: 18px;
+      font-size: 0.95rem;
+    }
+
+    .signature-name {
+      margin-top: 16px;
+      font-weight: 600;
+      font-family: "Playfair Display", serif;
+    }
+
+    .contact-line {
+      font-size: 0.9rem;
+      color: var(--text-muted-light);
+    }
+
+    body.dark .contact-line {
+      color: var(--text-muted-dark);
+    }
+
+    footer {
+      margin-top: 6px;
+      font-size: 0.78rem;
+      text-align: right;
+      padding: 4px 8px 8px;
+      background: linear-gradient(90deg, #111827 0%, #4b1010 40%, #111827 100%);
+      border-radius: 0 0 14px 14px;
+      border-top: 1px solid rgba(148,163,184,0.4);
+      color: #e5e7eb;
+    }
+
+    body.dark footer {
+      background: linear-gradient(90deg, #050509 0%, #8b1111 40%, #050509 100%);
+      border-top-color: var(--border-dark);
+      color: #e5e7eb;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .toolbar {
+        display: none !important;
+      }
+      .page-wrapper {
+        margin: 0;
+        padding: 0;
+      }
+      .banner {
+        box-shadow: none;
+      }
+      .card {
+        box-shadow: none;
+      }
+      a {
+        color: #000000 !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- BANNIÈRE -->
+    <header class="banner">
+      <div class="banner-left">
+        <!-- Ta photo de profil -->
+        <img
+          src="https://raw.githubusercontent.com/mantorx/cv/main/photo.JPG"
+          alt="Photo de profil Arthur Mbomo"
+          class="profile-photo"
+        />
+        <div class="banner-title">
+          <h1>Arthur Mbomo</h1>
+          <span>Data Quality • Governance • Integration</span>
+        </div>
+      </div>
+
+      <div class="banner-right">
+        <div class="position-label">
+          DATA GOVERNANCE OFFICER<br />
+          <span style="font-size:0.75rem; letter-spacing:0.2em;">SIBELGA</span>
+        </div>
+        <div class="toolbar">
+          <button id="btn-fr" type="button" class="active">FR</button>
+          <button id="btn-en" type="button">EN</button>
+          <button id="btn-theme" type="button">Dark</button>
+          <button id="btn-print" type="button" class="secondary">PDF</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- LETTRE -->
+    <div class="card">
+      <div class="letter-banner" id="letter-banner-title">
+        LETTRE DE MOTIVATION — DATA GOVERNANCE OFFICER (H/F/X)
+      </div>
+
+      <div class="letter-body-wrapper">
+        <!-- LETTRE FR -->
+        <div id="letter-fr">
+          <div class="letter-header">
+            <div>
+              <strong>Arthur Mbomo</strong><br />
+              Avenue François Sebrechts 63<br />
+              1080 Koekelberg, Bruxelles — Belgique<br />
+              Tél. : +32 467 756 284<br />
+              E-mail : <a href="mailto:arthursmay@yahoo.fr">arthursmay@yahoo.fr</a>
+            </div>
+            <div>
+              Bruxelles, le <span id="date-fr"></span><br /><br />
+              À l’attention du service Recrutement<br />
+              Sibelga<br />
+              Quai des Usines 16<br />
+              1000 Bruxelles
+            </div>
+          </div>
+
+          <p class="subject-line">
+            Objet : Candidature au poste de Data Governance Officer (H/F/X)
+          </p>
+
+          <p>Madame, Monsieur,</p>
+
+          <p>
+            Actuellement <strong>Data Quality Analyst (Data Governance &amp; Integration)</strong>,
+            je souhaite mettre mon expérience en <strong>gouvernance, qualité et intégration des données</strong>
+            au service de Sibelga en tant que <strong>Data Governance Officer</strong>. Votre ambition de faire
+            de la donnée un véritable actif de l’entreprise, au cœur des décisions et de la transition énergétique
+            bruxelloise, fait entièrement écho à mon parcours et à mes motivations.
+          </p>
+
+          <p>
+            Au fil de mes expériences (notamment chez MSF Supply, SPF Économie et UCB), j’ai développé une expertise
+            très proche des missions décrites dans votre offre :
+          </p>
+          <ul>
+            <li>mise en place de <strong>cadres de gouvernance des données</strong>,</li>
+            <li>construction de <strong>KPI de qualité</strong> et de tableaux de bord de pilotage,</li>
+            <li>travail sur les <strong>référentiels métiers</strong> et la cohérence des données entre systèmes,</li>
+            <li>collaboration étroite avec les métiers, l’IT et les fournisseurs.</li>
+          </ul>
+
+          <p>
+            Dans mes fonctions actuelles, je participe à la <strong>définition et à la documentation des concepts métier</strong>,
+            à la construction de <strong>data catalogs</strong> et à la clarification des responsabilités autour des données
+            (data ownership, data stewardship). Je contribue à l’analyse des flux de données, à la description de leur parcours
+            (<em>data lineage</em>) et à l’identification des risques de qualité ou de rupture d’intégrité entre systèmes.
+            Cette approche structurée et orientée métier me permet de jouer un rôle de relais entre les équipes opérationnelles
+            et les équipes techniques.
+          </p>
+
+          <p>
+            La dimension <strong>qualité des données</strong> est centrale dans mon travail : je mets en place des indicateurs
+            de complétude, de cohérence et de fraîcheur, je conçois ou améliore des <strong>règles de qualité</strong>,
+            et je suis les résultats dans le temps pour en rendre compte au management. Lorsque des problèmes sont identifiés,
+            je participe à l’analyse des causes et à la définition de <strong>plans d’actions correctifs</strong>,
+            en veillant à ce que les règles métier soient correctement traduites en contrôles techniques.
+            Cette démarche rejoint directement votre attente de suivi régulier des contrôles de qualité et de reporting managérial.
+          </p>
+
+          <!-- PARAGRAPHE AJOUTÉ : ALCOA+, 6 DIMENSIONS, RÉSULTATS -->
+          <p>
+            Chez MSF Supply, j’ai notamment piloté la mise en place d’indicateurs actionnables,
+            basés sur les principes <strong>ALCOA+</strong> et sur une structure de gouvernance articulée autour de
+            <strong>six dimensions</strong> : qualité, sécurité, confidentialité, intégration des systèmes,
+            <em>master &amp; reference &amp; meta data</em> et visualisation des données. Cette approche, centrée
+            sur l’identification des points d’attention et la hiérarchisation de la sensibilité des données,
+            a permis en deux ans de faire passer l’<strong>indice de santé qualité</strong> de nos systèmes
+            d’environ <strong>75&nbsp;% à 98&nbsp;%</strong>, de réduire significativement les non‑conformités
+            de données dans l’environnement pharmaceutique dans lequel MSF Supply opère (supply de produits médicaux),
+            d’améliorer la compréhension des données métiers, de mettre en place des <strong>KPI d’interopérabilité clairs</strong>
+            entre les flux de données de différents systèmes, d’uniformiser les <strong>master data</strong> de nos
+            catalogues articles et fournisseurs, et d’atteindre un <strong>alignement cohérent et homogène des données
+            de référence</strong> dans l’ensemble du paysage applicatif.
+          </p>
+
+          <p>
+            Ma stratégie consiste à embarquer les équipes dans les scénarios de risques et de mitigation, en leur montrant
+            concrètement les avantages pour leurs opérations (réduction des corrections manuelles, fiabilité des indicateurs,
+            fluidité des processus) et, pour l’IT, l’impact positif sur la qualité et la sécurité des rapports BI,
+            afin d’améliorer significativement l’<strong>expérience de prise de décision du management</strong>.
+          </p>
+
+          <p>
+            Par ailleurs, je suis particulièrement sensible à la <strong>dimension culturelle</strong> de la data :
+            au-delà des outils, je m’attache à <strong>expliquer, vulgariser et former</strong>.
+            J’ai l’habitude d’animer des ateliers avec des profils variés (métier, IT, fournisseurs),
+            de clarifier les rôles et responsabilités autour des données et de promouvoir les bonnes pratiques
+            pour que la donnée soit réellement perçue comme un actif commun. Ma formation continue
+            (EPHEC en Business Data Analysis, bootcamp Power BI, Data Analysis Lead Program, Executive Master en Management &amp; Data Management à l’ICHEC)
+            renforce cette capacité à faire le lien entre vision stratégique, gouvernance et usages concrets.
+          </p>
+
+          <p>
+            Je travaille au quotidien en contexte <strong>Agile</strong>, avec des équipes pluridisciplinaires,
+            ce qui m’a appris à :
+          </p>
+          <ul>
+            <li>structurer et prioriser les besoins avec les métiers,</li>
+            <li>collaborer avec les architectes de données et les équipes IT pour faire évoluer les modèles conceptuels et logiques,</li>
+            <li>participer à la conception de <strong>dashboards stratégiques et opérationnels</strong> en intervenant
+                sur la définition des indicateurs et le sourcing des données.</li>
+          </ul>
+
+          <!-- PARAGRAPHE MOTIVATION / SIBELGA / QUITTER MSF -->
+          <p>
+            Sibelga représente pour moi l’opportunité de changer de secteur, de découvrir d’autres systèmes,
+            de diversifier mon expérience et de valoriser mes acquis au sein d’une entreprise à
+            <strong>fort engagement sociétal</strong>. Quitter MSF ne signifie pas tourner le dos à une organisation
+            dans laquelle je me suis beaucoup épanoui, mais plutôt porter mon regard vers l’avenir&nbsp;:
+            continuer à me développer aux côtés d’autres équipes, challenger mes acquis, relever de nouveaux défis
+            et contribuer à bâtir, avec vous, une vision sociétale forte autour de la donnée et de l’énergie à Bruxelles.
+          </p>
+
+          <p>
+            Rigoureux, communicant et orienté solution, je suis convaincu de pouvoir contribuer à la
+            <strong>maturité data de Sibelga</strong>, en vous aidant à :
+          </p>
+          <ul>
+            <li>structurer et maintenir un <strong>glossaire métier</strong> partagé,</li>
+            <li>documenter le <strong>business &amp; technical lineage</strong> des données clés,</li>
+            <li>définir et diffuser des <strong>standards de gouvernance</strong>,</li>
+            <li>renforcer la <strong>culture data</strong> au sein des équipes,</li>
+            <li>soutenir le développement de rapports et cockpits fiables et alignés avec les besoins métier.</li>
+          </ul>
+
+          <p class="closing">
+            Je serais ravi de pouvoir discuter avec vous de la manière dont mon expérience en data governance,
+            data quality et intégration de données peut s’intégrer dans les ambitions du Data Office de Sibelga.
+          </p>
+
+          <p>
+            Je vous remercie pour l’attention portée à ma candidature et me tiens à votre disposition pour un entretien.
+          </p>
+
+          <p>Veuillez agréer, Madame, Monsieur, l’expression de mes salutations distinguées.</p>
+
+          <div class="signature-block">
+            <p class="signature-name">Arthur Mbomo</p>
+            <p class="contact-line">
+              Tél. : +32 467 756 284 — E-mail : <a href="mailto:arthursmay@yahoo.fr">arthursmay@yahoo.fr</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- LETTRE EN -->
+        <div id="letter-en" style="display:none;">
+          <div class="letter-header">
+            <div>
+              <strong>Arthur Mbomo</strong><br />
+              Avenue François Sebrechts 63<br />
+              1080 Koekelberg, Brussels — Belgium<br />
+              Tel: +32 467 756 284<br />
+              E-mail: <a href="mailto:arthursmay@yahoo.fr">arthursmay@yahoo.fr</a>
+            </div>
+            <div>
+              Brussels, <span id="date-en"></span><br /><br />
+              To the attention of the Recruitment Department<br />
+              Sibelga<br />
+              Quai des Usines 16<br />
+              1000 Brussels
+            </div>
+          </div>
+
+          <p class="subject-line">
+            Subject: Application for the position of Data Governance Officer (M/F/X)
+          </p>
+
+          <p>Dear Sir or Madam,</p>
+
+          <p>
+            I am currently working as a <strong>Data Quality Analyst (Data Governance &amp; Integration)</strong>,
+            and I would like to bring my experience in <strong>data governance, data quality and data integration</strong>
+            to Sibelga as a <strong>Data Governance Officer</strong>. Your ambition to treat data as a true company asset,
+            at the heart of decision‑making and Brussels’ energy transition, strongly resonates with my background and motivations.
+          </p>
+
+          <p>
+            Throughout my experience (notably at MSF Supply, FPS Economy and UCB), I have developed expertise that aligns
+            very closely with the responsibilities described in your job description:
+          </p>
+          <ul>
+            <li>setting up <strong>data governance frameworks</strong>,</li>
+            <li>building <strong>quality KPIs</strong> and management dashboards,</li>
+            <li>working on <strong>business reference data</strong> and ensuring data consistency across systems,</li>
+            <li>close collaboration with business teams, IT and external vendors.</li>
+          </ul>
+
+          <p>
+            In my current role, I contribute to the <strong>definition and documentation of business concepts</strong>,
+            the creation of <strong>data catalogs</strong> and the clarification of roles and responsibilities around data
+            (data ownership, data stewardship). I analyse data flows, document their journey (<em>data lineage</em>)
+            and identify quality risks or integrity breaks across systems. This structured and business‑oriented approach
+            allows me to act as a bridge between operational teams and technical teams.
+          </p>
+
+          <p>
+            <strong>Data quality</strong> is at the core of my work: I define and monitor indicators such as completeness,
+            consistency and freshness, design or enhance <strong>data quality rules</strong>, and track the results over time
+            to report back to management. When issues are identified, I help analyse root causes and define
+            <strong>corrective action plans</strong>, ensuring that business rules are properly translated into technical controls.
+            This approach is fully aligned with your expectations regarding regular quality control monitoring and management reporting.
+          </p>
+
+          <!-- PARAGRAPHE AJOUTÉ : ALCOA+, 6 DIMENSIONS, RÉSULTATS (EN) -->
+          <p>
+            At MSF Supply, I led the implementation of actionable indicators based on the <strong>ALCOA+</strong> principles
+            and on a governance framework structured around <strong>six dimensions</strong>:
+            quality, security, confidentiality, system integration, <em>master &amp; reference &amp; meta data</em>,
+            and data visualisation. This approach, focused on identifying key risk areas and ranking data according
+            to their sensitivity, enabled us within two years to increase the overall <strong>data quality health score</strong>
+            of our systems from around <strong>75% to 98%</strong>, significantly reduce data non‑conformities in the
+            pharmaceutical environment in which MSF Supply operates (medical products supply), improve business
+            understanding of data, design <strong>clear interoperability KPIs</strong> between system data flows,
+            standardise <strong>master data</strong> for our item and supplier catalogs, and achieve a
+            <strong>coherent, homogeneous alignment of reference data</strong> across the application landscape.
+          </p>
+
+          <p>
+            My strategy is to bring teams on board by walking them through risk and mitigation scenarios and showing them
+            the tangible benefits for their daily operations (fewer manual fixes, more reliable indicators, smoother processes),
+            and for IT, the positive impact on the <strong>quality and security of BI reports</strong>. The ultimate goal
+            is to significantly enhance the <strong>decision‑making experience</strong> for management.
+          </p>
+
+          <p>
+            I am also particularly attentive to the <strong>cultural dimension</strong> of data:
+            beyond tools, I focus on <strong>explaining, simplifying and training</strong>.
+            I am used to facilitating workshops with diverse profiles (business, IT, vendors),
+            clarifying roles and responsibilities around data and promoting best practices so that data is genuinely perceived
+            as a shared asset. My continuous education (EPHEC in Business Data Analysis, Power BI bootcamp, Data Analysis Lead Program,
+            Executive Master in Management &amp; Data Management at ICHEC) strengthens my ability to connect strategic vision,
+            governance and concrete use cases.
+          </p>
+
+          <p>
+            I work daily in an <strong>Agile</strong> environment with cross‑functional teams, which has taught me how to:
+          </p>
+          <ul>
+            <li>structure and prioritise needs with business stakeholders,</li>
+            <li>collaborate with data architects and IT teams to evolve conceptual and logical data models,</li>
+            <li>contribute to the design of <strong>strategic and operational dashboards</strong>, by defining indicators and sourcing data.</li>
+          </ul>
+
+          <!-- MOTIVATION / SIBELGA (EN) -->
+          <p>
+            Sibelga is, for me, a great opportunity to change sector, discover new systems, broaden my experience
+            and leverage my skills within a company with a strong <strong>societal mission</strong>.
+            Leaving MSF does not mean turning my back on an organisation where I have thrived; it means looking ahead:
+            continuing to grow alongside new teams, challenging what I have learned so far, taking on new challenges
+            and contributing to building a strong societal vision around data and energy in Brussels.
+          </p>
+
+          <p>
+            Rigorous, communicative and solution‑oriented, I am convinced that I can contribute to
+            Sibelga’s <strong>data maturity journey</strong> by helping you:
+          </p>
+          <ul>
+            <li>structure and maintain a shared <strong>business glossary</strong>,</li>
+            <li>document the <strong>business &amp; technical lineage</strong> of key data,</li>
+            <li>define and disseminate <strong>data governance standards</strong>,</li>
+            <li>strengthen the <strong>data culture</strong> across teams,</li>
+            <li>support the development of reliable, business‑aligned reports and cockpits.</li>
+          </ul>
+
+          <p class="closing">
+            I would be delighted to further discuss how my experience in data governance, data quality and data integration
+            could support Sibelga’s Data Office ambitions.
+          </p>
+
+          <p>
+            Thank you very much for considering my application. I remain at your disposal for an interview.
+          </p>
+
+          <p>Yours faithfully,</p>
+
+          <div class="signature-block">
+            <p class="signature-name">Arthur Mbomo</p>
+            <p class="contact-line">
+              Tel: +32 467 756 284 — E-mail: <a href="mailto:arthursmay@yahoo.fr">arthursmay@yahoo.fr</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer-text">
+        Lettre de motivation — Data Governance Officer (Sibelga) — Arthur Mbomo
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Format dates
+    function formatDateFR(date) {
+      return date.toLocaleDateString('fr-FR', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric'
+      });
+    }
+    function formatDateEN(date) {
+      return date.toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric'
+      });
+    }
+
+    const now = new Date();
+    document.getElementById('date-fr').textContent = formatDateFR(now);
+    document.getElementById('date-en').textContent = formatDateEN(now);
+
+    // Boutons
+    const btnFr = document.getElementById('btn-fr');
+    const btnEn = document.getElementById('btn-en');
+    const btnTheme = document.getElementById('btn-theme');
+    const btnPrint = document.getElementById('btn-print');
+
+    const letterFr = document.getElementById('letter-fr');
+    const letterEn = document.getElementById('letter-en');
+    const bannerTitle = document.getElementById('letter-banner-title');
+    const footerText = document.getElementById('footer-text');
+
+    function setLang(lang) {
+      if (lang === 'fr') {
+        letterFr.style.display = 'block';
+        letterEn.style.display = 'none';
+        btnFr.classList.add('active');
+        btnEn.classList.remove('active');
+        document.documentElement.lang = 'fr';
+        bannerTitle.textContent =
+          'LETTRE DE MOTIVATION — DATA GOVERNANCE OFFICER (H/F/X)';
+        footerText.textContent =
+          'Lettre de motivation — Data Governance Officer (Sibelga) — Arthur Mbomo';
+      } else {
+        letterFr.style.display = 'none';
+        letterEn.style.display = 'block';
+        btnFr.classList.remove('active');
+        btnEn.classList.add('active');
+        document.documentElement.lang = 'en';
+        bannerTitle.textContent =
+          'COVER LETTER — DATA GOVERNANCE OFFICER (M/F/X)';
+        footerText.textContent =
+          'Cover letter — Data Governance Officer (Sibelga) — Arthur Mbomo';
+      }
+    }
+
+    function toggleTheme() {
+      const isDark = document.body.classList.toggle('dark');
+      btnTheme.textContent = isDark ? 'Light' : 'Dark';
+    }
+
+    btnFr.addEventListener('click', () => setLang('fr'));
+    btnEn.addEventListener('click', () => setLang('en'));
+    btnTheme.addEventListener('click', toggleTheme);
+
+    // Impression en PDF (FR + thème clair)
+    btnPrint.addEventListener('click', () => {
+      document.body.classList.remove('dark');
+      btnTheme.textContent = 'Dark';
+      setLang('fr');
+      setTimeout(() => window.print(), 100);
+    });
+  </script>
+</body>
+</html>
